@@ -1,0 +1,7 @@
+main {
+  display: grid;
+  place-items: center;
+  min-block-size: 100dvh;
+  min-block-size: 100vh;
+  background-color: var(--yellow);
+}
