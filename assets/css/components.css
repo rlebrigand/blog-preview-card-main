@@ -1,0 +1,52 @@
+.article {
+  --gap: 1.25rem;
+  --radius: 28px;
+
+  display: grid;
+  gap: var(--gap);
+  inline-size: 88%;
+  padding: var(--gap);
+  background-color: var(--white);
+  border: solid 1.25px currentColor;
+  border-radius: var(--gap);
+  box-shadow: 8px 8px currentColor;
+  overflow: hidden;
+}
+
+.article__category-tag {
+  justify-self: start;
+  padding: 0.4rem 0.9rem;
+  font-weight: 800;
+  background-color: var(--yellow);
+  border-radius: 5px;
+}
+
+.article__image {
+  inline-size: 100%;
+  border-radius: calc(var(--radius) - var(--gap));
+  object-fit: cover;
+}
+
+.article__title a {
+  font-weight: 800;
+  transition: color 150ms ease-in-out;
+}
+  .article__title a:hover {
+    color: var(--yellow);
+  }
+  .article__title a:focus-visible {
+    outline: solid 2px var(--yellow);
+    outline-offset: 3px;
+  }
+
+.article__description {
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+.article__author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 800;
+}
