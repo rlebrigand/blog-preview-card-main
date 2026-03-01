@@ -4,7 +4,7 @@
 
   display: grid;
   gap: var(--gap);
-  inline-size: 88%;
+  inline-size: min(380px, 88%);
   padding: var(--gap);
   background-color: var(--white);
   border: solid 1.25px currentColor;
